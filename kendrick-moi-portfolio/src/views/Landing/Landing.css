@@ -47,3 +47,39 @@ a {
 .landing-subtitle:hover {
     border-color: rgba(255, 255, 255, 100);
 }
+
+.landing-top-right-container {
+    position: absolute;
+    display: flex;
+    top: 40px;
+    right: 60px;
+}
+
+.socmed-link {
+    margin: 0 5px;
+}
+
+.portfolio-link-container {
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-link {
+    text-decoration: none;
+}
+
+.portfolio-link:hover {
+    color: rgba(255, 255, 255, 0.2);
+    transition: color 200ms ease-in-out;
+}
+
+.socmed-links-container:hover > .socmed-link {
+    color: rgba(255, 255, 255, 0.2);
+    transition: color 200ms ease-in-out;
+}
+
+.socmed-links-container .socmed-link:hover {
+    color: #fff;
+    transition: color 200ms ease-in-out;
+  }
