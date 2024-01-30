@@ -1,0 +1,49 @@
+.landing-container {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Chivo', sans-serif;
+}
+
+a {
+    color: #ffffff;
+    font-family: 'Chivo', sans-serif;
+}
+
+.landing-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.landing-center-container {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.landing-title {
+    font-weight: 900;
+    font-size: 86px;
+    line-height: 86px;
+    margin: .2em;
+}
+
+.landing-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: border-color 170ms ease-in-out;
+}
+
+.landing-subtitle:hover {
+    border-color: rgba(255, 255, 255, 100);
+}
