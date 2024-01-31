@@ -4,8 +4,13 @@ import { AiOutlineMail } from "react-icons/ai";
 import landingVideo from "./assets/SABAH.mp4"; 
 import backupImage from "./assets/backup-img.jpg";
 import "./Landing.css";
+import { useEffect } from "react";
  
 const Landing = () => {
+  useEffect(() => {
+    document.title = "Kendrick Moi"
+  })
+
   return (
     <div className="landing-main-container">
       <div className="landing-top-right-container">
