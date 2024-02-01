@@ -1,0 +1,70 @@
+.portfolio-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolio-title {
+    color: #111111; 
+
+    font-family: 'Josefin Sans';
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    margin-top: 0.1em;
+}
+
+.portfolio-title h1 {
+    margin-block-end: 1rem;
+}
+
+.portfolio-title-anchor {
+    color: #111111;
+    text-decoration: none;
+}
+
+.portfolio-links {
+    display: flex;
+    gap: 10rem;
+}
+
+.portfolio-links > a { 
+    color: #000000;
+    text-decoration: none;
+
+    font-family: 'Jost';
+    line-height: 34px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.portfolio-links a:not(.active) {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-links a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+.portfolio-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    transition: width 0.5s;
+}
+
+.portfolio-links a:hover::after {
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    .portfolio-menu-mobile {
+        content-visibility: hidden;
+    }
+}
