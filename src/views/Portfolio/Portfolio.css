@@ -59,9 +59,54 @@
     background: #000;
     transition: width 0.5s;
 }
-
+ 
 .portfolio-links a:hover::after {
     width: 100%;
+}
+
+.portfolio-socmed-links:hover > div {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.portfolio-socmed-links { 
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.portfolio-socmed-links a {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin: 0 6px;
+}
+
+.portfolio-socmed-links div {
+    background-color: rgba(0, 0, 0, 1);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.portfolio-socmed-links:hover div {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 170ms ease-in-out;
+}
+
+.portfolio-socmed-links div:hover, .portfolio-icon-container {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.portfolio-socmed-links svg {
+    transform: scale(1.5);
+}
+
+.portfolio-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 800px) {
