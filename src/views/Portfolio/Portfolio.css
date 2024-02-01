@@ -26,6 +26,7 @@
 .portfolio-links {
     display: flex;
     gap: 10rem;
+    content-visibility: hidden;
 }
 
 .portfolio-links > a { 
@@ -66,5 +67,9 @@
 @media (min-width: 800px) {
     .portfolio-menu-mobile {
         content-visibility: hidden;
+    }
+    
+    .portfolio-links {
+        content-visibility: visible;
     }
 }
