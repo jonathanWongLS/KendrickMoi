@@ -5,6 +5,10 @@ a {
 
 video {
     object-fit: cover;
+}
+
+.landing-video-container {
+    background-color: #1D2228 !important;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -12,8 +16,7 @@ video {
     left: 0;
 }
 
-.backup-image {
-    object-fit: cover;
+.backup-background {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -46,7 +49,8 @@ video {
     line-height: 86px;
     margin-block-start: 0;
     margin-block-end: 0;
-
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 .landing-subtitle-anchor {

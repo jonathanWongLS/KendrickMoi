@@ -1,8 +1,7 @@
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import landingVideo from "./assets/SABAH.mp4"; 
-import backupImage from "./assets/backup-img.jpg";
+import landingVideo from "./assets/SABAH.mp4";
 import "./Landing.css";
 import { useEffect } from "react";
  
@@ -30,12 +29,11 @@ const Landing = () => {
         </div>
       </div>
 
-      <>
+      <div className="landing-video-container">
         <video width="100%" height="100%" muted autoPlay loop className="landing-video">
           <source src={landingVideo} type="video/mp4" />
         </video>
-        <img height="100%" width="100%" src={backupImage} className="backup-image" />
-      </>
+      </div>
 
       <div className="landing-center-container">
         <p className="landing-title">KENDRICK MOI</p>
