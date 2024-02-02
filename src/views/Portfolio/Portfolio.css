@@ -3,11 +3,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 4rem 1rem;
 }
 
 .portfolio-title {
-    color: #111111; 
-
     font-family: 'Josefin Sans';
     font-size: 30px;
     letter-spacing: 0.05em;
@@ -16,6 +15,7 @@
 
 .portfolio-title h1 {
     margin-block-end: 1rem;
+    color: #111111; 
 }
 
 .portfolio-title-anchor {
@@ -29,7 +29,7 @@
     content-visibility: hidden;
 }
 
-.portfolio-links > a { 
+.portfolio-links span { 
     color: #000000;
     text-decoration: none;
 
@@ -38,15 +38,18 @@
     font-weight: 400;
     font-size: 18px;
 }
+  
+.portfolio-links a {
+    position: relative;
+    text-decoration: none;
+}
 
-.portfolio-links a:not(.active) {
+.portfolio-links a span {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.portfolio-links a {
-    position: relative;
-    color: #000;
-    text-decoration: none;
+.portfolio-links .active span {
+    color: rgba(0, 0, 0, 1);
 }
 
 .portfolio-links a::after {
@@ -107,6 +110,66 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 3rem 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.row > * {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.portfolio-items-row img {
+    object-fit: cover;
+    height: 100%;
+    z-index: 2;
+}
+
+.overlay {
+    position: relative;
+    height: 100%;
+}
+
+.overlay h2 {
+    position: absolute;
+    display: block;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    opacity: 0;
+
+    font-family: 'Jost';
+    font-weight: 900;
+    font-style: normal;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-size: 33px;
+    letter-spacing: .1em;
+    color: #fff;
+}
+
+.overlay:hover::before {
+    position: absolute;
+    display: block;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+}
+
+.overlay:hover h2 {
+    opacity: 1;
 }
 
 @media (min-width: 800px) {
