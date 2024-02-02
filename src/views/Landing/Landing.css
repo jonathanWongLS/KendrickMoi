@@ -1,5 +1,5 @@
 a {
-    color: #f5f5f5;
+    color: #f5f5f5 !important;
     font-family: 'Chivo', sans-serif;
 }
 
@@ -61,12 +61,12 @@ video {
 }
 
 .landing-subtitle-anchor {
-    border-bottom: 2px solid rgba(245, 245, 245, 0.2);
+    border-bottom: 2px solid rgba(245, 245, 245, 0.2) !important;
     transition: border-bottom 170ms ease-in-out;
 }
 
 .landing-subtitle-anchor:hover {
-    border-bottom-color: rgba(245, 245, 245, 100);
+    border-bottom-color: rgba(245, 245, 245, 100) !important;
 }
 
 .landing-top-right-container {
@@ -92,17 +92,17 @@ video {
 }
 
 .portfolio-link:hover {
-    color: rgba(245, 245, 245, 0.2);
+    color: rgba(245, 245, 245, 0.2) !important;
     transition: color 200ms ease-in-out;
 }
 
 .socmed-links-container:hover > .socmed-link {
-    color: rgba(245, 245, 245, 0.2);
+    color: rgba(245, 245, 245, 0.2) !important;
     transition: color 200ms ease-in-out;
 }
 
 .socmed-links-container .socmed-link:hover {
-    color: #f5f5f5;
+    color: #f5f5f5 !important;
     transition: color 200ms ease-in-out;
 }
 
